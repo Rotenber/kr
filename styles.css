@@ -1,0 +1,328 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    position: relative;
+    height: 0; /* Скрываем высоту шапки */
+}
+
+.logo-zone {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo-zone img {
+    max-width: 120px; /* Уменьшаем логотип */
+}
+
+.banner {
+    background: url('img/banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    margin-top: 0; /* Убираем отступ сверху */
+}
+
+.banner-text {
+    position: absolute;
+    left: 50%;
+    bottom: 40px; /* Отступ от низа */
+    transform: translateX(-530px); /* Отступ от центра на 530 пикселей */
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Уменьшаем жирность */
+    letter-spacing: 0.1em; /* Увеличиваем межбуквенный интервал */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.banner-text h1 {
+    font-size: 3em; /* Увеличиваем размер шрифта */
+    margin: 0;
+}
+
+.info-text {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2em; /* Размер шрифта для дополнительного текста */
+    max-width: 800px;
+    font-weight: 300; /* Уменьшаем жирность */
+    padding: 0 40px; /* Увеличиваем отступ слева */
+    text-align: left; /* Выравнивание текста влево */
+    transform: translateX(-126px); /* Отступ от центра на 126 пикселей влево */
+}
+
+.info-text .highlight {
+    font-size: 1em; /* Размер шрифта */
+    font-weight: bold; /* Делаем текст жирным */
+    line-height: 1.5; /* Высота строки для лучшего межстрочного интервала */
+}
+
+main {
+    padding: 20px;
+}
+
+main p, main a, main h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer button:hover {
+    background: #0056b3;
+}
+
+/* Стили для секции бронирования */
+.booking-section {
+    text-align: center; /* Выровнять текст по левому краю */
+    margin: 20px auto;
+    max-width: 800px;
+    transform: translateX(-88px);
+}
+
+.booking-section h2,
+.calendar,
+.timeslots,
+.table-time {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    text-align: left;
+    margin-left: -40px; /* Отступ влево для выравнивания */
+}
+
+.booking-section h2 {
+    font-weight: 700; /* Делаем текст жирным */
+    font-size: 1.8em;
+}
+
+.people-count {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.people-count label {
+    font-size: 1.2em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.people-count select {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.calendar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.month {
+    text-align: center;
+}
+
+.month h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .banner {
+        height: 200px;
+    }
+
+    .banner-text {
+        left: 50%; /* Центрируем текст */
+        bottom: 50px; /* Меньший отступ от низа для мобильных устройств */
+        transform: translateX(-50%);
+        text-align: center; /* Выравнивание текста по центру */
+    }
+
+    .banner-text h1 {
+        font-size: 2em; /* Уменьшаем размер шрифта */
+        padding: 0 10px;
+    }
+
+    .info-text {
+        font-size: 1em; /* Увеличиваем размер шрифта для дополнительного текста */
+        margin-top: 10px;
+        padding: 0 20px; /* Уменьшаем отступ слева для мобильных устройств */
+    }
+
+    .logo-zone img {
+        max-width: 80px; /* Уменьшаем логотип для мобильных устройств */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px;
+        text-align: center;
+    }
+
+    footer button {
+        padding: 5px 10px;
+        margin: 0 2px;
+        font-size: 0.9em;
+    }
+
+    .calendar {
+        flex-direction: column;
+    }
+
+    .month {
+        margin-bottom: 20px;
+    }
+}
+
+/* Новые стили для таблицы времени и выбора количества людей */
+.timeslots {
+    text-align: left;
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeslots p {
+    font-size: 1.1em;
+}
+
+.reference-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.reference-container .item {
+    display: flex;
+    align-items: center;
+}
+
+.reference-container .color-block {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.color-block.green {
+    background-color: #4caf50;
+}
+
+.color-block.orange {
+    background-color: #ff9800;
+}
+
+.color-block.gray {
+    background-color: #9e9e9e;
+}
+
+.color-block.brown {
+    background-color: #795548;
+}
+
+.table-time a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.table-time a.time-free {
+    background-color: #4caf50;
+    color: white;
+}
+
+.table-time a.time-busy {
+    background-color: #ff9800;
+    color: white;
+}
+
+.table-time a:hover {
+    border-color: #333;
+}
+
+.buttonText {
+    font-weight: 700;
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+}
+
+.buttonText:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.icons {
+    margin-left: 5px;
+}
+
+.ticket-button-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.ticket-button-submit:hover {
+    background-color: #0056b3;
+}

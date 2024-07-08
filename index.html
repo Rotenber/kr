@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-zone">
+            <img src="img/logo.png" alt="Van Gogh Museum Logo">
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Book your tickets</h1>
+        </div>
+    </section>
+    <main>
+        <div class="info-text">
+            <div class="row">
+                <div class="col-sm-12 col-md-7-datepicker">
+                    <p>
+                        <strong>Plan your visit and book your ticket with start time. Also for Museumkaart holders.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="booking-section">
+            <div class="row">
+                <div class="col-sm-12 col-md-7-datepicker">
+                    <h2 class="subtitle">
+                        When would you like to visit the 
+                        <span class="vangoghmuseum">Van Gogh Museum</span>
+                        ?
+                    </h2>
+                    <div class="people-count">
+                        <label for="people-select">How many people are there in your group?</label>
+                        <select name="people-select" id="people-select">
+                            <option value="1" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="calendar">
+                        <div class="month">
+                            <h3>July 2024</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Mo</th>
+                                        <th>Tu</th>
+                                        <th>We</th>
+                                        <th>Th</th>
+                                        <th>Fr</th>
+                                        <th>Sa</th>
+                                        <th>Su</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <!-- другие дни месяца -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="month">
+                            <h3>August 2024</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Mo</th>
+                                        <th>Tu</th>
+                                        <th>We</th>
+                                        <th>Th</th>
+                                        <th>Fr</th>
+                                        <th>Sa</th>
+                                        <th>Su</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <!-- другие дни месяца -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="form-datepicker notranslate">
+                        <div id="datepicker" class="notranslate hasDatepicker">
+                            <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;"></div>
+                            <input type="hidden" name="ticketTime" id="ticketTime" value="18:00">
+                            <input type="hidden" name="overflowTime" id="overflowTime" value="">
+                        </div>
+                        <div class="visible-xs-block notranslate"></div>
+                        <div class="date-soldout">
+                            <div class="ui-state-disabled soldout">23</div>
+                            = sold out
+                        </div>
+                        <div class="time-selection" style="display: block;">
+                            <p>
+                                <strong>Times will be loaded...</strong>
+                            </p>
+                            <img src="/globalticket/template/vangoghmuseum/loading.gif" alt="loading">
+                        </div>
+                        <div class="timeslots" style="display: block;">
+                            <p>
+                                At what time would you like to visit?
+                                <span id="zomer-vrijdag">A free introduction on Van Gogh and his life is available at 7:30 pm.</span>
+                                <span id="zomer-zaterdag">A free introduction on Van Gogh and his life is available at 6:30 pm.</span>
+                                Tip! The museum is usually quieter at the times shown in green.
+                            </p>
+                            <div class="reference-container">
+                                <span class="item">
+                                    <span class="color-block green"></span>
+                                    Tickets available
+                                </span>
+                                <span class="item">
+                                    <span class="color-block orange"></span>
+                                    Some tickets still available
+                                </span>
+                                <span class="item">
+                                    <span class="color-block gray"></span>
+                                    No more tickets available
+                                </span>
+                                <span class="item item-quiethour">
+                                    <span class="color-block brown"></span>
+                                    Quiet hour for early birds
+                                </span>
+                            </div>
+                            <div class="table-time">
+                                <a href="#" class="notranslate time-row time-free">09:00</a>
+                                <a href="#" class="notranslate time-row time-free">09:15</a>
+                                <a href="#" class="notranslate time-row time-free">09:30</a>
+                                <a href="#" class="notranslate time-row time-free">09:45</a>
+                                <a href="#" class="notranslate time-row time-free">10:00</a>
+                                <a href="#" class="notranslate time-row time-free">10:15</a>
+                                <a href="#" class="notranslate time-row time-free">10:30</a>
+                                <a href="#" class="notranslate time-row time-free">10:45</a>
+                                <a href="#" class="notranslate time-row time-free">11:00</a>
+                                <a href="#" class="notranslate time-row time-free">11:15</a>
+                                <a href="#" class="notranslate time-row time-free">11:30</a>
+                                <a href="#" class="notranslate time-row time-free">11:45</a>
+                                <a href="#" class="notranslate time-row time-busy">12:00</a>
+                                <a href="#" class="notranslate time-row time-busy">12:15</a>
+                                <a href="#" class="notranslate time-row time-busy">12:30</a>
+                                <a href="#" class="notranslate time-row time-busy">12:45</a>
+                                <a href="#" class="notranslate time-row time-busy">13:00</a>
+                                <a href="#" class="notranslate time-row time-busy">13:15</a>
+                                <a href="#" class="notranslate time-row time-busy">13:30</a>
+                                <a href="#" class="notranslate time-row time-busy">13:45</a>
+                                <a href="#" class="notranslate time-row time-busy">14:00</a>
+                                <a href="#" class="notranslate time-row time-busy">14:15</a>
+                                <a href="#" class="notranslate time-row time-busy">14:30</a>
+                                <a href="#" class="notranslate time-row time-busy">14:45</a>
+                                <a href="#" class="notranslate time-row time-busy">15:00</a>
+                                <a href="#" class="notranslate time-row time-busy">15:15</a>
+                                <a href="#" class="notranslate time-row time-busy">15:30</a>
+                                <a href="#" class="notranslate time-row time-busy">15:45</a>
+                                <a href="#" class="notranslate time-row time-free">16:00</a>
+                                <a href="#" class="notranslate time-row time-free">16:15</a>
+                                <a href="#" class="notranslate time-row time-free">16:30</a>
+                                <a href="#" class="notranslate time-row time-free">16:45</a>
+                                <a href="#" class="notranslate time-row time-free">17:00</a>
+                                <a href="#" class="notranslate time-row time-free">17:15</a>
+                                <a href="#" class="notranslate time-row time-free">17:30</a>
+                                <a href="#" class="notranslate time-row time-free">17:45</a>
+                                <a href="#" class="notranslate time-row time-free">18:00</a>
+                                <a href="#" class="notranslate time-row time-free">18:15</a>
+                                <a href="#" class="notranslate time-row time-free">18:30</a>
+                                <a href="#" class="notranslate time-row time-free">18:45</a>
+                                <a href="#" class="notranslate time-row time-free">19:00</a>
+                                <a href="#" class="notranslate time-row time-free">19:15</a>
+                                <a href="#" class="notranslate time-row time-free">19:30</a>
+                            </div>
+                            <div class="overflow-container" style="display:none;">
+                                <p>
+                                    <strong>Your date/timeslot of preference sold out</strong>
+                                    <br>
+                                    You can still visit our continuous exhibition on these timeslots:
+                                </p>
+                            </div>
+                            <div class="table-time-overflow" style="display: none;"></div>
+                            <a class="button btn-arrow-right btn-sec ticket-button-submit">
+                                <span class="visible-xs-inline">2. </span>
+                                <span class="buttonText">Tickets</span>
+                                <span class="icons icon-arrow-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button>Contact</button>
+        <button>About</button>
+    </footer>
+</body>
+</html>
+
