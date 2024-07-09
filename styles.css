@@ -1,4 +1,5 @@
 /* Основные стили для body и html */
+/* Основные стили для body и html */
 html, body {
     height: 100%;
     margin: 0;
@@ -329,117 +330,87 @@ td.active {
     }
 
     .banner-text {
-        left: 50%;
-        bottom: 20px; /* Уменьшаем отступ от низа для мобильных устройств */
-        transform: translateX(-50%); /* Центрируем текст */
+        left: 50%; /* Центрируем текст */
+        bottom: 50px; /* Меньший отступ от низа для мобильных устройств */
+        transform: translateX(-300px); /* Сдвиг влево для мобильных устройств */
     }
 
     .info-text {
         padding: 0 20px; /* Уменьшаем отступы */
-        text-align: center; /* Центрируем текст */
     }
 
     .people-count select {
-        margin-left: 0; /* Убираем отступ для селекта */
-        width: 100%; /* Делаем селект шире на мобильных устройствах */
-        margin-top: 10px; /* Добавляем отступ сверху */
-    }
-
-    .people-count-label {
-        display: block; /* Переносим на новую строку */
-        margin-bottom: 10px; /* Добавляем отступ снизу */
-        text-align: center; /* Центрируем текст */
-    }
-
-    .calendar-nav {
-        position: static; /* Делаем кнопки статичными */
-        margin: 10px; /* Добавляем отступы */
-    }
-
-    .months {
-        flex-direction: column; /* Располагаем месяцы вертикально */
-    }
-
-    .month {
-        margin: 20px 0; /* Добавляем отступы сверху и снизу */
-        min-width: 100%; /* Занимаем всю ширину */
+        margin-left: 180px; /* Уменьшаем отступ для селекта */
     }
 
     .month .month-title {
-        top: -10px; /* Поднимаем заголовок месяца */
-        transform: translateX(0); /* Убираем сдвиг заголовка */
+        top: -20px; /* Поднимаем заголовок месяца */
     }
 
-    .table-1, .table-2 {
-        transform: translateX(0); /* Убираем сдвиг таблиц */
-        width: 100%;
-    }
-
-    .calendar {
-        flex-direction: column; /* Располагаем таблицы вертикально */
-    }
-
-    .booking-section h2,
-    .calendar,
-    .timeslots,
-    .table-time {
-        text-align: center; /* Центрируем текст */
-        max-width: 100%; /* Делаем элементы шире */
+    .table-1,
+    .table-2 {
+        transform: translateX(-30px); /* Сдвиг таблиц влево для мобильных устройств */
     }
 }
 
+/* Дополнительные медиа-запросы для телефонов */
 @media (max-width: 480px) {
-    .banner {
-        height: 150px; /* Ещё меньше высота баннера */
-    }
-
-    .banner-text h1 {
-        font-size: 2em; /* Уменьшаем размер шрифта */
+    .banner-text {
+        transform: translateX(-150px); /* Еще больше сдвигаем влево для телефонов */
     }
 
     .info-text {
+        font-size: 1em; /* Уменьшаем размер шрифта для текста */
+        padding: 0 10px; /* Уменьшаем отступы */
+    }
+
+    .people-count-label {
         font-size: 1em; /* Уменьшаем размер шрифта */
     }
 
     .people-count select {
-        font-size: 0.9em; /* Уменьшаем размер шрифта селекта */
+        margin-left: 120px; /* Еще больше уменьшаем отступ для селекта */
     }
 
-    .calendar-nav img {
-        width: 10px; /* Ещё меньше размер стрелки */
-        height: 10px;
+    .month .month-title {
+        top: -10px; /* Еще больше поднимаем заголовок месяца */
     }
 
-    .step-navigation ul {
-        flex-direction: column; /* Располагаем шаги навигации вертикально */
+    .table-1,
+    .table-2 {
+        transform: translateX(0); /* Убираем сдвиг таблиц для телефонов */
     }
 
-    .step-navigation li {
-        margin: 5px 0; /* Добавляем отступы между шагами */
-    }
-
-    .next-step-button {
-        font-size: 0.9em; /* Уменьшаем размер шрифта кнопки */
-        padding: 8px 16px; /* Уменьшаем отступы */
-    }
-
-    .additional-info {
-        padding: 10px; /* Уменьшаем отступы */
-    }
-
-    /* Показываем только один календарь */
-    .calendar {
-        display: flex;
-        flex-direction: column;
+    .calendar-nav {
+        right: 10px; /* Перемещаем кнопку ближе */
+        top: 5px; /* Еще ниже */
     }
 
     .month {
-        display: none; /* Скрываем все месяцы */
+        min-width: 250px; /* Уменьшаем минимальную ширину месяца */
+        margin-bottom: 30px; /* Уменьшаем отступ между таблицами */
     }
 
-    .month-1 {
-        display: block; /* Показываем первый месяц */
+    .banner-text h1 {
+        font-size: 2em; /* Уменьшаем размер шрифта заголовка */
+    }
+
+    .next-step-button {
+        font-size: 0.8em; /* Уменьшаем размер шрифта кнопки */
+        padding: 8px 16px; /* Уменьшаем padding кнопки */
+    }
+
+    .step-navigation ul {
+        gap: 10px; /* Уменьшаем расстояние между элементами меню */
+    }
+
+    .step-navigation li {
+        font-size: 0.8em; /* Уменьшаем размер шрифта для меню */
+    }
+
+    .booking-section h2 {
+        font-size: 1.2em; /* Уменьшаем размер шрифта заголовка */
+        margin-top: 50px; /* Уменьшаем отступ сверху */
     }
 }
-
 
