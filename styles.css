@@ -1,5 +1,5 @@
 /* Основные стили для body и html */
-/* Основные стили для body и html */
+/* Основные стили для body и html *
 html, body {
     height: 100%;
     margin: 0;
@@ -413,4 +413,3 @@ td.active {
         margin-top: 50px; /* Уменьшаем отступ сверху */
     }
 }
-
