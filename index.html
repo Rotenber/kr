@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-zone">
+            <img src="img/logo.png" alt="Van Gogh Museum Logo">
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Book your tickets</h1>
+        </div>
+    </section>
+    <main>
+        <div class="info-text">
+            <div class="row">
+                <div class="col-sm-12 col-md-7-datepicker">
+                    <p>
+                        <strong>Plan your visit and book your ticket with start time. Also for Museumkaart<br>holders.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="booking-section">
+            <div class="row">
+                <div class="col-sm-12 col-md-7-datepicker">
+                    <h2 class="subtitle">
+                        When would you like to visit the 
+                        <span class="vangoghmuseum">Van Gogh Museum</span>
+                        ?
+                    </h2>
+                    <div class="people-count">
+                        <label for="people-select" class="people-count-label">How many people are there in your group?</label>
+                        <select name="people-select" id="people-select">
+                            <option value="1" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="months">
+                            <div class="month month-1">
+                                <h3 class="month-title">July 2024</h3>
+                                <table class="table-1">
+                                    <thead>
+                                        <tr>
+                                            <th>Mo</th>
+                                            <th>Tu</th>
+                                            <th>We</th>
+                                            <th>Th</th>
+                                            <th>Fr</th>
+                                            <th>Sa</th>
+                                            <th>Su</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td onclick="selectDate(this)">3</td>
+                                            <td onclick="selectDate(this)">4</td>
+                                            <td onclick="selectDate(this)">5</td>
+                                            <td onclick="selectDate(this)">6</td>
+                                            <td onclick="selectDate(this)">7</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectDate(this)">8</td>
+                                            <td onclick="selectDate(this)">9</td>
+                                            <td onclick="selectDate(this)">10</td>
+                                            <td onclick="selectDate(this)">11</td>
+                                            <td onclick="selectDate(this)">12</td>
+                                            <td onclick="selectDate(this)">13</td>
+                                            <td onclick="selectDate(this)">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectDate(this)">15</td>
+                                            <td onclick="selectDate(this)">16</td>
+                                            <td onclick="selectDate(this)">17</td>
+                                            <td onclick="selectDate(this)">18</td>
+                                            <td onclick="selectDate(this)">19</td>
+                                            <td onclick="selectDate(this)">20</td>
+                                            <td onclick="selectDate(this)">21</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectDate(this)">22</td>
+                                            <td onclick="selectDate(this)">23</td>
+                                            <td onclick="selectDate(this)">24</td>
+                                            <td onclick="selectDate(this)">25</td>
+                                            <td onclick="selectDate(this)">26</td>
+                                            <td onclick="selectDate(this)">27</td>
+                                            <td onclick="selectDate(this)">28</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectDate(this)">29</td>
+                                            <td onclick="selectDate(this)">30</td>
+                                            <td onclick="selectDate(this)">31</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="month month-2">
+                                <h3 class="month-title">August 2024</h3>
+                                <table class="table-2">
+                                    <thead>
+                                        <tr>
+                                            <th>Mo</th>
+                                            <th>Tu</th>
+                                            <th>We</th>
+                                            <th>Th</th>
+                                            <th>Fr</th>
+                                            <th>Sa</th>
+                                            <th>Su</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td onclick="selectDate(this)">1</td>
+                                            <td onclick="selectDate(this)">2</td>
+                                            <td onclick="selectDate(this)">3</td>
+                                            <td onclick="selectDate(this)">4</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectDate(this)">5</td>
+                                            <td onclick="selectDate(this)">6</td>
+                                            <td onclick="selectDate(this)">7</td>
+                                            <td onclick="selectDate(this)">8</td>
+                                            <td onclick="selectDate(this)">9</td>
+                                            <td onclick="selectDate(this)">10</td>
+                                            <td onclick="selectDate(this)">11</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectDate(this)">12</td>
+                                            <td onclick="selectDate(this)">13</td>
+                                            <td onclick="selectDate(this)">14</td>
+                                            <td onclick="selectDate(this)">15</td>
+                                            <td onclick="selectDate(this)">16</td>
+                                            <td onclick="selectDate(this)">17</td>
+                                            <td onclick="selectDate(this)">18</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectDate(this)">19</td>
+                                            <td onclick="selectDate(this)">20</td>
+                                            <td onclick="selectDate(this)">21</td>
+                                            <td onclick="selectDate(this)">22</td>
+                                            <td onclick="selectDate(this)">23</td>
+                                            <td onclick="selectDate(this)">24</td>
+                                            <td onclick="selectDate(this)">25</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectDate(this)">26</td>
+                                            <td onclick="selectDate(this)">27</td>
+                                            <td onclick="selectDate(this)">28</td>
+                                            <td onclick="selectDate(this)">29</td>
+                                            <td onclick="selectDate(this)">30</td>
+                                            <td onclick="selectDate(this)">31</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <button class="calendar-nav next">
+                            <img src="img/arrow.png" alt="Next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Второй футер -->
+        <div class="additional-info">
+            <p>Please note:<br>
+                You can scan your ticket at the door. You can scan your paper or mobile ticket at the entrance. Employees of the Van Gogh Museum are present for assistance.
+            </p>
+            <p>We accept the following methods of payment:</p>
+            <img src="img/payment-methods.png" alt="Payment Methods">
+            <p><a href="#">More options</a></p>
+        </div>
+    </main>
+    <!-- Первый футер -->
+    <footer class="step-navigation">
+        <ul>
+            <li class="active">1. Plan your visit</li>
+            <li>2. Tickets</li>
+            <li>3. Your information</li>
+            <li>4. Payment</li>
+        </ul>
+        <button class="next-step-button">TICKETS ></button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
