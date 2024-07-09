@@ -1,3 +1,327 @@
+/* Основные стили для body и html */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Основные стили для main */
+main {
+    flex: 1; /* Заставляет main занимать оставшееся пространство */
+    padding: 20px;
+}
+
+/* Стили для навигационного меню */
+.step-navigation {
+    background-color: #212121; /* Темный фон */
+    color: #ccc; /* Светлый цвет текста */
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем элементы */
+    margin: 0; /* Убираем отступы */
+    overflow: hidden; /* Убираем лишние элементы */
+}
+
+.step-navigation ul {
+    list-style: none;
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем padding */
+    display: flex;
+    gap: 30px; /* Расстояние между элементами меню */
+}
+
+.step-navigation li {
+    font-size: 1em;
+    cursor: text; /* Изменяем курсор на текстовый */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем padding */
+}
+
+.step-navigation li.active {
+    font-weight: bold; /* Жирный текст для активного элемента */
+    color: #fff; /* Белый цвет текста для активного элемента */
+}
+
+.next-step-button {
+    background-color: #004c4c; /* Темно-бирюзовый фон */
+    color: #ccc; /* Светлый цвет текста */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 20px; /* Отступ слева от кнопки */
+}
+
+.next-step-button:hover {
+    background-color: #007b7b; /* Светлее при наведении */
+}
+
+/* Стили для дополнительного футера */
+.additional-info {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Занимает всю ширину */
+}
+
+.additional-info p {
+    margin: 10px 0;
+}
+
+.additional-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.additional-info a {
+    color: #007b7b;
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    text-decoration: underline;
+}
+
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    position: relative;
+    height: 0; /* Скрываем высоту шапки */
+}
+
+.logo-zone {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo-zone img {
+    max-width: 120px; /* Уменьшаем логотип */
+}
+
+.banner {
+    background: url('img/banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    margin-top: 0; /* Убираем отступ сверху */
+}
+
+.banner-text {
+    position: absolute;
+    left: 50%;
+    bottom: 40px; /* Отступ от низа */
+    transform: translateX(-600px); /* Отступ от центра на 600 пикселей, сдвиг влево на 70 пикселей */
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Уменьшаем жирность */
+    letter-spacing: 0.1em; /* Увеличиваем межбуквенный интервал */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.banner-text h1 {
+    font-size: 3em; /* Увеличиваем размер шрифта */
+    margin: 0;
+}
+
+.info-text {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2em; /* Размер шрифта для дополнительного текста */
+    max-width: 800px;
+    font-weight: 300; /* Уменьшаем жирность */
+    padding: 0 40px; /* Увеличиваем отступ слева */
+    text-align: left; /* Выравнивание текста влево */
+}
+
+.info-text .highlight {
+    font-size: 1em; /* Размер шрифта */
+    font-weight: bold; /* Делаем текст жирным */
+    line-height: 1.5; /* Высота строки для лучшего межстрочного интервала */
+}
+
+main {
+    padding: 20px;
+}
+
+main p, main a, main h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: auto; /* Отправляет футер вниз страницы */
+    width: 100%; /* Занимает всю ширину */
+}
+
+/* Стили для секции бронирования */
+.booking-section {
+    text-align: center; /* Выровнять текст по левому краю */
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.booking-section h2,
+.calendar,
+.timeslots,
+.table-time {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.booking-section h2 {
+    font-weight: 500; /* Уменьшаем жирность */
+    font-size: 1.5em; /* Уменьшаем размер шрифта */
+    margin-top: 70px; /* Отступ от верха */
+}
+
+.people-count {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.people-count-label {
+    font-size: 1.2em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.people-count select {
+    padding: 10px;
+    font-size: 1em;
+    margin-left: 270px; /* Отодвигаем вправо на 270 пикселей */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    padding-right: 40px; /* Увеличиваем отступ справа для иконок */
+    color: #007b7b; /* Яркий темно-бирюзовый цвет текста */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23007b7b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"/></svg>'), url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23007b7b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 2px, right 10px bottom 2px;
+    background-size: 24px 24px; /* Увеличиваем размер иконок */
+}
+
+.people-count select option {
+    color: #007b7b; /* Яркий темно-бирюзовый цвет текста */
+}
+
+.calendar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendar-nav {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: -20px; /* Расположить кнопку левее */
+    top: 10px; /* Опустить кнопку на 10 пикселей */
+}
+
+.calendar-nav img {
+    width: 12px; /* Уменьшаем размер стрелки */
+    height: 12px; /* Уменьшаем размер стрелки */
+}
+
+.months {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.calendar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.month {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+    min-width: 300px;
+    margin-bottom: 50px; /* Отступ между таблицами 50 пикселей */
+}
+
+.month .month-title {
+    font-size: 1em; /* Увеличение размера шрифта */
+    margin-bottom: 10px;
+    display: block;
+    text-align: left; /* Выровнять заголовок месяца влево */
+    font-weight: bold; /* Сделать текст жирным */
+    position: absolute;
+    top: -30px; /* Поднять заголовок месяца над таблицей */
+    left: 0; /* Выравниваем заголовок влево */
+}
+
+.month-1 .month-title {
+    transform: translateX(-90px); /* Смещение заголовка "July 2024" на 90 пикселей влево */
+}
+
+.month-2 .month-title {
+    transform: translateX(-30px); /* Смещение заголовка "August 2024" на 30 пикселей влево */
+}
+
+/* Стили для индивидуальных таблиц */
+.table-1 {
+    width: 100%;
+    border-collapse: collapse;
+    transform: translateX(-90px); /* Сдвиг первой таблицы на 90 пикселей влево */
+}
+
+.table-2 {
+    width: 100%;
+    border-collapse: collapse;
+    transform: translateX(-30px); /* Сдвиг второй таблицы на 30 пикселей влево */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer; /* Устанавливаем указатель для ячеек */
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td.active {
+    background-color: #007b7b; /* Темно-бирюзовый цвет фона при клике */
+    color: white; /* Белый цвет текста при клике */
+}
+
 /* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
     .banner {
@@ -101,5 +425,19 @@
 
     .additional-info {
         padding: 10px; /* Уменьшаем отступы */
+    }
+
+    /* Показываем только один календарь */
+    .calendar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .month {
+        display: none; /* Скрываем все месяцы */
+    }
+
+    .month-1 {
+        display: block; /* Показываем первый месяц */
     }
 }
