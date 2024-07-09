@@ -9,6 +9,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Основные стили для main */
@@ -425,4 +426,3 @@ td.active {
         max-width: 56px; /* Уменьшаем логотип для мобильных устройств на 30% */
     }
 }
-
