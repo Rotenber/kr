@@ -1,5 +1,4 @@
 /* Основные стили для body и html */
-/* Основные стили для body и html *
 html, body {
     height: 100%;
     margin: 0;
@@ -106,7 +105,7 @@ header {
 }
 
 .logo-zone {
-    position: absolute;
+    position: fixed; /* Фиксируем логотип */
     top: 0;
     right: 0;
     z-index: 1000;
@@ -128,7 +127,7 @@ header {
     position: absolute;
     left: 50%;
     bottom: 40px; /* Отступ от низа */
-    transform: translateX(-450px); /* Отступ от центра на 600 пикселей, сдвиг влево на 70 пикселей */
+    transform: translateX(-600px); /* Отступ от центра на 600 пикселей, сдвиг влево на 70 пикселей */
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Roboto', sans-serif;
@@ -357,15 +356,16 @@ td.active {
 @media (max-width: 480px) {
     .banner-text {
         transform: translateX(-150px); /* Еще больше сдвигаем влево для телефонов */
+        font-size: 1.2em; /* Уменьшаем размер шрифта еще на 20% */
     }
 
     .info-text {
-        font-size: 1em; /* Уменьшаем размер шрифта для текста */
+        font-size: 0.5em; /* Уменьшаем размер шрифта для текста еще на 20% */
         padding: 0 10px; /* Уменьшаем отступы */
     }
 
     .people-count-label {
-        font-size: 1em; /* Уменьшаем размер шрифта */
+        font-size: 0.5em; /* Уменьшаем размер шрифта еще на 20% */
     }
 
     .people-count select {
@@ -374,6 +374,7 @@ td.active {
 
     .month .month-title {
         top: -10px; /* Еще больше поднимаем заголовок месяца */
+        font-size: 0.4em; /* Уменьшаем размер шрифта еще на 20% */
     }
 
     .table-1,
@@ -392,11 +393,11 @@ td.active {
     }
 
     .banner-text h1 {
-        font-size: 2em; /* Уменьшаем размер шрифта заголовка */
+        font-size: 1.2em; /* Уменьшаем размер шрифта заголовка еще на 20% */
     }
 
     .next-step-button {
-        font-size: 0.8em; /* Уменьшаем размер шрифта кнопки */
+        font-size: 0.4em; /* Уменьшаем размер шрифта кнопки еще на 20% */
         padding: 8px 16px; /* Уменьшаем padding кнопки */
     }
 
@@ -405,11 +406,23 @@ td.active {
     }
 
     .step-navigation li {
-        font-size: 0.8em; /* Уменьшаем размер шрифта для меню */
+        font-size: 0.4em; /* Уменьшаем размер шрифта для меню еще на 20% */
     }
 
     .booking-section h2 {
-        font-size: 1.2em; /* Уменьшаем размер шрифта заголовка */
+        font-size: 0.6em; /* Уменьшаем размер шрифта заголовка еще на 20% */
         margin-top: 50px; /* Уменьшаем отступ сверху */
     }
+
+    .logo-zone {
+        position: fixed;
+        top: 10px; /* Отступ от верхнего края */
+        right: 10px; /* Отступ от правого края */
+        z-index: 1000;
+    }
+
+    .logo-zone img {
+        max-width: 56px; /* Уменьшаем логотип для мобильных устройств на 30% */
+    }
 }
+
